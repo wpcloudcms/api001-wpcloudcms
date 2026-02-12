@@ -1,34 +1,25 @@
-// DIAGNOSTIC: Minimal Express server to test if Hostinger can run ANY Node.js app
-// If this works (shows "Hello from Directus API"), then the issue is Directus startup
-// If this fails (still 503), then the issue is Hostinger configuration
-
-const express = require('express');
-const app = express();
+// Minimal Node.js server for Phusion Passenger (Hostinger Shared Hosting)
+// Uses ONLY built-in Node.js modules — zero external dependencies
+const http = require('http');
 
 const PORT = process.env.PORT || 3000;
-const HOST = '0.0.0.0';
 
-app.get('/', (req, res) => {
-    res.json({
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
         status: 'OK',
-        message: 'Hello from Directus API server!',
+        message: 'Hello from Hostinger Node.js!',
+        url: req.url,
         port: PORT,
-        host: HOST,
+        nodeVersion: process.version,
         env: {
             DB_HOST: process.env.DB_HOST || 'NOT SET',
-            DB_DATABASE: process.env.DB_DATABASE || 'NOT SET',
-            PUBLIC_URL: process.env.PUBLIC_URL || 'NOT SET',
             KEY: process.env.KEY ? 'SET' : 'NOT SET',
-            SECRET: process.env.SECRET ? 'SET' : 'NOT SET',
-            NODE_ENV: process.env.NODE_ENV || 'NOT SET'
+            PUBLIC_URL: process.env.PUBLIC_URL || 'NOT SET'
         }
-    });
+    }));
 });
 
-app.get('/health', (req, res) => {
-    res.json({ status: 'healthy' });
-});
-
-app.listen(PORT, HOST, () => {
-    console.log(`Test server running on http://${HOST}:${PORT}`);
+server.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
 });
