@@ -4,7 +4,7 @@
     "description": "AITS Directus Project for Hostinger",
     "main": "index.js",
     "engines": {
-        "node": ">=22.0.0"
+        "node": ">=20.0.0"
     },
     "scripts": {
         "start": "node node_modules/directus/cli.js start",
