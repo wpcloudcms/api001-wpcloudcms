@@ -7,7 +7,7 @@
         "node": ">=22.0.0"
     },
     "scripts": {
-        "start": "node server.js",
+        "start": "directus start",
         "dev": "directus start",
         "bootstrap": "directus bootstrap",
         "schema:setup": "node scripts/schema-setup.js",
