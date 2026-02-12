@@ -1,35 +1,16 @@
-const { spawn } = require('child_process');
-const path = require('path');
+// Set environment variables BEFORE importing Directus
+process.env.PORT = process.env.PORT || '3000';
+process.env.HOST = process.env.HOST || '0.0.0.0';
 
-const PORT = process.env.PORT || 8055;
-const HOST = '0.0.0.0';
+console.log(`[Directus] Starting on ${process.env.HOST}:${process.env.PORT}...`);
+console.log(`[Directus] DB_HOST: ${process.env.DB_HOST}`);
+console.log(`[Directus] PUBLIC_URL: ${process.env.PUBLIC_URL}`);
 
-console.log(`[Index] Starting Directus on ${HOST}:${PORT}...`);
+// Set process.argv so Directus CLI receives the "start" command
+process.argv = [process.execPath, 'directus', 'start'];
 
-// Set environment variables for Directus
-process.env.PORT = PORT;
-process.env.HOST = HOST;
-process.env.PUBLIC_URL = process.env.PUBLIC_URL || `http://localhost:${PORT}`;
-
-// Use directus/cli.js directly to avoid permission issues with .bin/directus
-const directusScript = path.join(__dirname, 'node_modules', 'directus', 'cli.js');
-
-console.log(`[Index] Using Directus CLI script at: ${directusScript}`);
-
-// Spawn 'node' with the script as argument
-const directus = spawn(process.execPath, [directusScript, 'start'], {
-    stdio: 'inherit',
-    shell: false,
-    env: process.env
-});
-
-directus.on('error', (err) => {
-    console.error('[Index] Failed to start Directus:', err);
-});
-
-directus.on('close', (code) => {
-    console.log(`[Index] Directus process exited with code ${code}`);
-    if (code !== 0) {
-        process.exit(code);
-    }
+// Import Directus CLI directly (runs in THIS process, opens port here)
+import('./node_modules/directus/cli.js').catch((err) => {
+    console.error('[Directus] Failed to start:', err);
+    process.exit(1);
 });
