@@ -13,15 +13,15 @@ process.env.PORT = PORT;
 process.env.HOST = HOST;
 process.env.PUBLIC_URL = process.env.PUBLIC_URL || `http://localhost:${PORT}`;
 
-// Use the local Directus binary instead of npx
-// This path works on Linux (Hostinger)
-const directusBin = path.join(__dirname, 'node_modules', '.bin', 'directus');
+// Use directus/cli.js directly to avoid permission issues with .bin/directus
+const directusScript = path.join(__dirname, 'node_modules', 'directus', 'cli.js');
 
-console.log(`[Server] Using Directus binary at: ${directusBin}`);
+console.log(`[Server] Using Directus CLI script at: ${directusScript}`);
 
-const directus = spawn(directusBin, ['start'], {
+// Spawn 'node' with the script as argument
+const directus = spawn(process.execPath, [directusScript, 'start'], {
     stdio: 'inherit',
-    shell: true,
+    shell: false, // Shell not needed for direct node execution
     env: process.env
 });
 
