@@ -1,16 +1,34 @@
-// Set environment variables BEFORE importing Directus
-process.env.PORT = process.env.PORT || '3000';
-process.env.HOST = process.env.HOST || '0.0.0.0';
+// DIAGNOSTIC: Minimal Express server to test if Hostinger can run ANY Node.js app
+// If this works (shows "Hello from Directus API"), then the issue is Directus startup
+// If this fails (still 503), then the issue is Hostinger configuration
 
-console.log(`[Directus] Starting on ${process.env.HOST}:${process.env.PORT}...`);
-console.log(`[Directus] DB_HOST: ${process.env.DB_HOST}`);
-console.log(`[Directus] PUBLIC_URL: ${process.env.PUBLIC_URL}`);
+const express = require('express');
+const app = express();
 
-// Set process.argv so Directus CLI receives the "start" command
-process.argv = [process.execPath, 'directus', 'start'];
+const PORT = process.env.PORT || 3000;
+const HOST = '0.0.0.0';
 
-// Import Directus CLI directly (runs in THIS process, opens port here)
-import('./node_modules/directus/cli.js').catch((err) => {
-    console.error('[Directus] Failed to start:', err);
-    process.exit(1);
+app.get('/', (req, res) => {
+    res.json({
+        status: 'OK',
+        message: 'Hello from Directus API server!',
+        port: PORT,
+        host: HOST,
+        env: {
+            DB_HOST: process.env.DB_HOST || 'NOT SET',
+            DB_DATABASE: process.env.DB_DATABASE || 'NOT SET',
+            PUBLIC_URL: process.env.PUBLIC_URL || 'NOT SET',
+            KEY: process.env.KEY ? 'SET' : 'NOT SET',
+            SECRET: process.env.SECRET ? 'SET' : 'NOT SET',
+            NODE_ENV: process.env.NODE_ENV || 'NOT SET'
+        }
+    });
+});
+
+app.get('/health', (req, res) => {
+    res.json({ status: 'healthy' });
+});
+
+app.listen(PORT, HOST, () => {
+    console.log(`Test server running on http://${HOST}:${PORT}`);
 });
