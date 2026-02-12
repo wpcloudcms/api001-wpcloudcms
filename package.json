@@ -2,7 +2,7 @@
     "name": "aits-directus-project",
     "version": "1.0.0",
     "description": "AITS Directus Project for Hostinger",
-    "main": "app.js",
+    "main": "server.js",
     "engines": {
         "node": ">=18.0.0"
     },
@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "directus": "11.14.1",
+        "express": "^4.18.2",
         "mysql2": "^3.12.0",
         "dotenv": "^16.4.7"
     }
