@@ -2,7 +2,7 @@
     "name": "aits-directus-project",
     "version": "1.0.0",
     "description": "AITS Directus Project for Hostinger",
-    "main": "server.js",
+    "main": "index.js",
     "engines": {
         "node": ">=22.0.0"
     },
