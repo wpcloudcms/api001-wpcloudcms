@@ -1,8 +1,11 @@
 // Directus launcher for Ploi.io / VPS deployment
 // Sets environment variables and starts Directus in-process
 
+// Load .env FIRST so PORT and other vars are available
+require('dotenv').config();
+
 process.env.HOST = process.env.HOST || '0.0.0.0';
-process.env.PORT = process.env.PORT || '8055';
+process.env.PORT = process.env.PORT || '3001';
 
 console.log(`[Directus] Starting on ${process.env.HOST}:${process.env.PORT}...`);
 console.log(`[Directus] Node.js ${process.version}`);
