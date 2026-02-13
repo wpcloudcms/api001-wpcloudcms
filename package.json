@@ -1,22 +1,21 @@
 {
     "name": "aits-directus-project",
     "version": "1.0.0",
-    "description": "AITS Directus Project for Hostinger",
+    "description": "AITS Directus Project",
     "main": "index.js",
     "engines": {
         "node": ">=22.0.0"
     },
     "scripts": {
         "start": "node index.js",
-        "dev": "directus start",
-        "bootstrap": "directus bootstrap",
+        "dev": "npx directus start",
+        "bootstrap": "npx directus bootstrap",
         "schema:setup": "node scripts/schema-setup.js",
         "schema:permissions": "node scripts/permissions-setup.js",
         "schema:sample-data": "node scripts/sample-data.js"
     },
     "dependencies": {
         "directus": "11.14.1",
-        "express": "^4.18.2",
         "mysql2": "^3.12.0",
         "dotenv": "^16.4.7"
     }

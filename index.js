@@ -1,25 +1,19 @@
-// Minimal Node.js server for Phusion Passenger (Hostinger Shared Hosting)
-// Uses ONLY built-in Node.js modules — zero external dependencies
-const http = require('http');
+// Directus launcher for Ploi.io / VPS deployment
+// Sets environment variables and starts Directus in-process
 
-const PORT = process.env.PORT || 3000;
+process.env.HOST = process.env.HOST || '0.0.0.0';
+process.env.PORT = process.env.PORT || '8055';
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({
-        status: 'OK',
-        message: 'Hello from Hostinger Node.js!',
-        url: req.url,
-        port: PORT,
-        nodeVersion: process.version,
-        env: {
-            DB_HOST: process.env.DB_HOST || 'NOT SET',
-            KEY: process.env.KEY ? 'SET' : 'NOT SET',
-            PUBLIC_URL: process.env.PUBLIC_URL || 'NOT SET'
-        }
-    }));
-});
+console.log(`[Directus] Starting on ${process.env.HOST}:${process.env.PORT}...`);
+console.log(`[Directus] Node.js ${process.version}`);
+console.log(`[Directus] DB_HOST: ${process.env.DB_HOST || 'NOT SET'}`);
+console.log(`[Directus] PUBLIC_URL: ${process.env.PUBLIC_URL || 'NOT SET'}`);
 
-server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server listening on 0.0.0.0:${PORT}`);
+// Set argv so Directus CLI receives the "start" command
+process.argv = [process.execPath, 'directus', 'start'];
+
+// Import Directus CLI directly (runs in THIS process)
+import('./node_modules/directus/cli.js').catch((err) => {
+    console.error('[Directus] Failed to start:', err);
+    process.exit(1);
 });

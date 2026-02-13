@@ -1,5 +1,0 @@
-PassengerAppRoot /home/u659541638/domains/api001.wpcloudcms.com/public_html
-PassengerAppType node
-PassengerNodejs /opt/alt/alt-nodejs22/root/bin/node
-PassengerStartupFile index.js
-PassengerBaseURI /
