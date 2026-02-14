@@ -15,8 +15,9 @@
         "schema:sample-data": "node scripts/sample-data.js"
     },
     "dependencies": {
+        "@directus/sdk": "^21.1.0",
         "directus": "11.14.1",
-        "mysql2": "^3.12.0",
-        "dotenv": "^16.4.7"
+        "dotenv": "^16.4.7",
+        "mysql2": "^3.12.0"
     }
 }
