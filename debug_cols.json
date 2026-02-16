@@ -1,0 +1,778 @@
+{
+  "data": [
+    {
+      "collection": "customers",
+      "meta": {
+        "collection": "customers",
+        "icon": "people",
+        "note": "Customer information and contact details",
+        "display_template": "{{customer_name}} ({{email}})",
+        "hidden": false,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "customers",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "employees",
+      "meta": {
+        "collection": "employees",
+        "icon": "badge",
+        "note": "Employee profiles",
+        "display_template": "{{employee_name}} ({{email}})",
+        "hidden": false,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "employees",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "job_roles",
+      "meta": {
+        "collection": "job_roles",
+        "icon": "assignment_ind",
+        "note": null,
+        "display_template": "{{name}}",
+        "hidden": false,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "job_roles",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "projects",
+      "meta": {
+        "collection": "projects",
+        "icon": "work",
+        "note": "Project management with budgets and deadlines",
+        "display_template": "{{project_name}}",
+        "hidden": false,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "projects",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "meta": {
+        "collection": "projects_employees",
+        "icon": null,
+        "note": null,
+        "display_template": null,
+        "hidden": true,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "projects_employees",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "meta": {
+        "collection": "support_tickets",
+        "icon": "confirmation_number",
+        "note": "Customer support tickets linked to projects and developers",
+        "display_template": "{{title}} ({{status}})",
+        "hidden": false,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "support_tickets",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "meta": {
+        "collection": "time_logs",
+        "icon": "schedule",
+        "note": "Developer time tracking per project",
+        "display_template": "{{developer_id.developer_name}} – {{project_id.project_name}} ({{minutes}}m)",
+        "hidden": false,
+        "singleton": false,
+        "translations": null,
+        "archive_field": null,
+        "archive_app_filter": true,
+        "archive_value": null,
+        "unarchive_value": null,
+        "sort_field": null,
+        "accountability": "all",
+        "color": null,
+        "item_duplication_fields": null,
+        "sort": null,
+        "group": null,
+        "collapse": "open",
+        "preview_url": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "time_logs",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_0900_ai_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_access",
+      "meta": {
+        "collection": "directus_access",
+        "hidden": false,
+        "singleton": false,
+        "icon": "admin_panel_settings",
+        "note": "$t:directus_collection.directus_access",
+        "translations": null,
+        "display_template": "{{ policy.name }}",
+        "accountability": "all",
+        "sort_field": "sort",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_access",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_activity",
+      "meta": {
+        "collection": "directus_activity",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_activity",
+        "translations": null,
+        "display_template": null,
+        "accountability": null,
+        "system": true
+      },
+      "schema": {
+        "name": "directus_activity",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_collections",
+      "meta": {
+        "collection": "directus_collections",
+        "hidden": false,
+        "singleton": false,
+        "icon": "database",
+        "note": "$t:directus_collection.directus_collections",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_collections",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_comments",
+      "meta": {
+        "collection": "directus_comments",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_comments",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_comments",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_fields",
+      "meta": {
+        "collection": "directus_fields",
+        "hidden": false,
+        "singleton": false,
+        "icon": "input",
+        "note": "$t:directus_collection.directus_fields",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_fields",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_files",
+      "meta": {
+        "collection": "directus_files",
+        "hidden": false,
+        "singleton": false,
+        "icon": "folder",
+        "note": "$t:directus_collection.directus_files",
+        "translations": null,
+        "display_template": "{{ $thumbnail }} {{ title }}",
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_files",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_folders",
+      "meta": {
+        "collection": "directus_folders",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_folders",
+        "translations": null,
+        "display_template": "{{ name }}",
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_folders",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_migrations",
+      "meta": {
+        "collection": "directus_migrations",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_migrations",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_migrations",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_permissions",
+      "meta": {
+        "collection": "directus_permissions",
+        "hidden": false,
+        "singleton": false,
+        "icon": "admin_panel_settings",
+        "note": "$t:directus_collection.directus_permissions",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_permissions",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_policies",
+      "meta": {
+        "collection": "directus_policies",
+        "hidden": false,
+        "singleton": false,
+        "icon": "admin_panel_settings",
+        "note": "$t:directus_collection.directus_policies",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_policies",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_presets",
+      "meta": {
+        "collection": "directus_presets",
+        "hidden": false,
+        "singleton": false,
+        "icon": "bookmark",
+        "note": "$t:directus_collection.directus_presets",
+        "translations": null,
+        "display_template": null,
+        "accountability": null,
+        "system": true
+      },
+      "schema": {
+        "name": "directus_presets",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_relations",
+      "meta": {
+        "collection": "directus_relations",
+        "hidden": false,
+        "singleton": false,
+        "icon": "merge_type",
+        "note": "$t:directus_collection.directus_relations",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_relations",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_revisions",
+      "meta": {
+        "collection": "directus_revisions",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_revisions",
+        "translations": null,
+        "display_template": null,
+        "accountability": null,
+        "system": true
+      },
+      "schema": {
+        "name": "directus_revisions",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_roles",
+      "meta": {
+        "collection": "directus_roles",
+        "hidden": false,
+        "singleton": false,
+        "icon": "supervised_user_circle",
+        "note": "$t:directus_collection.directus_roles",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_roles",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_sessions",
+      "meta": {
+        "collection": "directus_sessions",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_sessions",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_sessions",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "meta": {
+        "collection": "directus_settings",
+        "hidden": false,
+        "singleton": true,
+        "icon": null,
+        "note": "$t:directus_collection.directus_settings",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_settings",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_users",
+      "meta": {
+        "collection": "directus_users",
+        "hidden": false,
+        "singleton": false,
+        "icon": "people_alt",
+        "note": "$t:directus_collection.directus_users",
+        "translations": null,
+        "display_template": "{{ first_name }} {{ last_name }}",
+        "accountability": "all",
+        "archive_field": "status",
+        "archive_value": "archived",
+        "unarchive_value": "draft",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_users",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_dashboards",
+      "meta": {
+        "collection": "directus_dashboards",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_dashboards",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_dashboards",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_panels",
+      "meta": {
+        "collection": "directus_panels",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_panels",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_panels",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_notifications",
+      "meta": {
+        "collection": "directus_notifications",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_notifications",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_notifications",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_shares",
+      "meta": {
+        "collection": "directus_shares",
+        "hidden": false,
+        "singleton": false,
+        "icon": "share",
+        "note": "$t:directus_collection.directus_shares",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_shares",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_flows",
+      "meta": {
+        "collection": "directus_flows",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_flows",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_flows",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_operations",
+      "meta": {
+        "collection": "directus_operations",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_operations",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_operations",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_translations",
+      "meta": {
+        "collection": "directus_translations",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_translations",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_translations",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_versions",
+      "meta": {
+        "collection": "directus_versions",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_versions",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_versions",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    },
+    {
+      "collection": "directus_extensions",
+      "meta": {
+        "collection": "directus_extensions",
+        "hidden": false,
+        "singleton": false,
+        "icon": null,
+        "note": "$t:directus_collection.directus_extensions",
+        "translations": null,
+        "display_template": null,
+        "accountability": "all",
+        "system": true
+      },
+      "schema": {
+        "name": "directus_extensions",
+        "schema": "api001_wpccms",
+        "comment": "",
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+      }
+    }
+  ]
+}

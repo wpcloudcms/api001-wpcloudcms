@@ -1,0 +1,46 @@
+[
+  {
+    "field": "id",
+    "has_meta": true
+  },
+  {
+    "field": "status",
+    "has_meta": true
+  },
+  {
+    "field": "email",
+    "has_meta": true
+  },
+  {
+    "field": "phone",
+    "has_meta": true
+  },
+  {
+    "field": "specialization",
+    "has_meta": true
+  },
+  {
+    "field": "hourly_rate",
+    "has_meta": true
+  },
+  {
+    "field": "availability",
+    "has_meta": true
+  },
+  {
+    "field": "skills",
+    "has_meta": true
+  },
+  {
+    "field": "date_created",
+    "has_meta": true
+  },
+  {
+    "field": "date_updated",
+    "has_meta": true
+  },
+  {
+    "field": "employee_name",
+    "has_meta": true
+  }
+]

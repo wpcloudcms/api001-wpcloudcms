@@ -12,7 +12,9 @@
         "bootstrap": "npx directus bootstrap",
         "schema:setup": "node scripts/schema-setup.js",
         "schema:permissions": "node scripts/permissions-setup.js",
-        "schema:sample-data": "node scripts/sample-data.js"
+        "schema:sample-data": "node scripts/sample-data.js",
+        "roles:add": "node scripts/add-roles.js",
+        "schema:refactor": "node scripts/refactor-schema.js"
     },
     "dependencies": {
         "@directus/sdk": "^21.1.0",
