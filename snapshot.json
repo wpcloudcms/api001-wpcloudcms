@@ -1,0 +1,5512 @@
+{
+  "version": 1,
+  "directus": "11.14.1",
+  "vendor": "mysql",
+  "collections": [
+    {
+      "collection": "customers",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "customers",
+        "color": null,
+        "display_template": "{{customer_name}} ({{email}})",
+        "group": null,
+        "hidden": false,
+        "icon": "people",
+        "item_duplication_fields": null,
+        "note": "Customer information and contact details",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "customers"
+      }
+    },
+    {
+      "collection": "employees",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "employees",
+        "color": null,
+        "display_template": "{{employee_name}} ({{email}})",
+        "group": null,
+        "hidden": false,
+        "icon": "badge",
+        "item_duplication_fields": null,
+        "note": "Employee profiles",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "employees"
+      }
+    },
+    {
+      "collection": "invoices",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "invoices",
+        "color": null,
+        "display_template": null,
+        "group": null,
+        "hidden": false,
+        "icon": "receipt_long",
+        "item_duplication_fields": null,
+        "note": "Client Invoices",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "invoices"
+      }
+    },
+    {
+      "collection": "invoices_services",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "invoices_services",
+        "color": null,
+        "display_template": null,
+        "group": null,
+        "hidden": true,
+        "icon": null,
+        "item_duplication_fields": null,
+        "note": null,
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "invoices_services"
+      }
+    },
+    {
+      "collection": "job_roles",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "job_roles",
+        "color": null,
+        "display_template": "{{job_role_name}}",
+        "group": null,
+        "hidden": false,
+        "icon": "assignment_ind",
+        "item_duplication_fields": null,
+        "note": null,
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "job_roles"
+      }
+    },
+    {
+      "collection": "payrolls",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "payrolls",
+        "color": null,
+        "display_template": null,
+        "group": null,
+        "hidden": false,
+        "icon": "payments",
+        "item_duplication_fields": null,
+        "note": "Employee Payroll",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "payrolls"
+      }
+    },
+    {
+      "collection": "projects",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "projects",
+        "color": null,
+        "display_template": "{{project_name}}",
+        "group": null,
+        "hidden": false,
+        "icon": "work",
+        "item_duplication_fields": null,
+        "note": "Project management with budgets and deadlines",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "projects"
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "projects_employees",
+        "color": null,
+        "display_template": null,
+        "group": null,
+        "hidden": true,
+        "icon": null,
+        "item_duplication_fields": null,
+        "note": null,
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "projects_employees"
+      }
+    },
+    {
+      "collection": "services",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "services",
+        "color": null,
+        "display_template": null,
+        "group": null,
+        "hidden": false,
+        "icon": "shopping_bag",
+        "item_duplication_fields": null,
+        "note": "Fixed price services",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "services"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "support_tickets",
+        "color": null,
+        "display_template": "{{title}} ({{status}})",
+        "group": null,
+        "hidden": false,
+        "icon": "confirmation_number",
+        "item_duplication_fields": null,
+        "note": "Customer support tickets linked to projects and developers",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "support_tickets"
+      }
+    },
+    {
+      "collection": "support_tickets_tasks",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "support_tickets_tasks",
+        "color": null,
+        "display_template": null,
+        "group": null,
+        "hidden": true,
+        "icon": null,
+        "item_duplication_fields": null,
+        "note": null,
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "support_tickets_tasks"
+      }
+    },
+    {
+      "collection": "tasks",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "tasks",
+        "color": null,
+        "display_template": "{{name}}",
+        "group": null,
+        "hidden": false,
+        "icon": "assignment",
+        "item_duplication_fields": null,
+        "note": "Project tasks",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": [
+          {
+            "language": "en-US",
+            "plural": "Tasks",
+            "singular": "Task",
+            "translation": "Tasks"
+          }
+        ],
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "tasks"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "meta": {
+        "accountability": "all",
+        "archive_app_filter": true,
+        "archive_field": null,
+        "archive_value": null,
+        "collapse": "open",
+        "collection": "time_logs",
+        "color": null,
+        "display_template": "{{developer_id.developer_name}} – {{project_id.project_name}} ({{minutes}}m)",
+        "group": null,
+        "hidden": false,
+        "icon": "schedule",
+        "item_duplication_fields": null,
+        "note": "Developer time tracking per project",
+        "preview_url": null,
+        "singleton": false,
+        "sort": null,
+        "sort_field": null,
+        "translations": null,
+        "unarchive_value": null,
+        "versioning": false
+      },
+      "schema": {
+        "name": "time_logs"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "collection": "customers",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "customers",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Active",
+              "value": "Active"
+            },
+            {
+              "text": "Inactive",
+              "value": "Inactive"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "status",
+        "table": "customers",
+        "data_type": "varchar",
+        "default_value": "Active",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "date_created",
+      "type": "timestamp",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_created",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": [
+          "date-created"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "date_created",
+        "table": "customers",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "date_updated",
+      "type": "timestamp",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_updated",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": [
+          "date-updated"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "date_updated",
+        "table": "customers",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "customer_name",
+      "type": "string",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "customer_name",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 5,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "customer_name",
+        "table": "customers",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "email",
+      "type": "string",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "email",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "email",
+        "table": "customers",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": true,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "phone",
+      "type": "string",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "phone",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 7,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "phone",
+        "table": "customers",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "company",
+      "type": "string",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "company",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 8,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "company",
+        "table": "customers",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "address",
+      "type": "text",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "address",
+        "group": null,
+        "hidden": false,
+        "interface": "input-multiline",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 9,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "address",
+        "table": "customers",
+        "data_type": "text",
+        "default_value": null,
+        "max_length": 65535,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "notes",
+      "type": "text",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "notes",
+        "group": null,
+        "hidden": false,
+        "interface": "input-rich-text-md",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 10,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "notes",
+        "table": "customers",
+        "data_type": "text",
+        "default_value": null,
+        "max_length": 65535,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "customers",
+      "field": "hourly_rate",
+      "type": "decimal",
+      "meta": {
+        "collection": "customers",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "hourly_rate",
+        "group": null,
+        "hidden": false,
+        "interface": "numeric",
+        "note": null,
+        "options": {
+          "iconLeft": "attach_money",
+          "placeholder": "Rate charged to client"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 11,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "hourly_rate",
+        "table": "customers",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 2,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "employees",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "employee_name",
+      "type": "string",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "employee_name",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "employee_name",
+        "table": "employees",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "email",
+      "type": "string",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "email",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": {
+          "iconLeft": "email"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "email",
+        "table": "employees",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": true,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "phone",
+      "type": "string",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "phone",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": {
+          "iconLeft": "phone"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "phone",
+        "table": "employees",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Active",
+              "value": "Active"
+            },
+            {
+              "text": "Inactive",
+              "value": "Inactive"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "status",
+        "table": "employees",
+        "data_type": "varchar",
+        "default_value": "Active",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "availability",
+      "type": "string",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "availability",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Available",
+              "value": "Available"
+            },
+            {
+              "text": "Busy",
+              "value": "Busy"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "availability",
+        "table": "employees",
+        "data_type": "varchar",
+        "default_value": "Available",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "specialization",
+      "type": "string",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "specialization",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "specialization",
+        "table": "employees",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "hourly_rate",
+      "type": "decimal",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "hourly_rate",
+        "group": null,
+        "hidden": false,
+        "interface": "numeric",
+        "note": null,
+        "options": {
+          "iconLeft": "attach_money"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "hourly_rate",
+        "table": "employees",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 2,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "skills",
+      "type": "json",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "skills",
+        "group": null,
+        "hidden": false,
+        "interface": "tags",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "skills",
+        "table": "employees",
+        "data_type": "json",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "date_created",
+      "type": "timestamp",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_created",
+        "group": null,
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": [
+          "date-created"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "date_created",
+        "table": "employees",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "date_updated",
+      "type": "timestamp",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_updated",
+        "group": null,
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": [
+          "date-updated"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "date_updated",
+        "table": "employees",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "employees",
+      "field": "job_role",
+      "type": "integer",
+      "meta": {
+        "collection": "employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "job_role",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "job_role",
+        "table": "employees",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "job_roles",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "invoices",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "invoice_id",
+      "type": "string",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "invoice_id",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "invoice_id",
+        "table": "invoices",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Draft",
+              "value": "Draft"
+            },
+            {
+              "text": "Sent",
+              "value": "Sent"
+            },
+            {
+              "text": "Paid",
+              "value": "Paid"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "status",
+        "table": "invoices",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "date_from",
+      "type": "date",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_from",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "date_from",
+        "table": "invoices",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "date_to",
+      "type": "date",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_to",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 5,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "date_to",
+        "table": "invoices",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "total_amount",
+      "type": "decimal",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "total_amount",
+        "group": null,
+        "hidden": false,
+        "interface": "numeric",
+        "note": null,
+        "options": {
+          "precision": 2
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "total_amount",
+        "table": "invoices",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 5,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "customer_id",
+      "type": "integer",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "customer_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 7,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "customer_id",
+        "table": "invoices",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "customers",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "project_id",
+      "type": "integer",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "project_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 8,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "project_id",
+        "table": "invoices",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "services",
+      "type": "alias",
+      "meta": {
+        "collection": "invoices",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "services",
+        "group": null,
+        "hidden": false,
+        "interface": "list-m2m",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 9,
+        "special": [
+          "m2m"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      }
+    },
+    {
+      "collection": "invoices_services",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "invoices_services",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "invoices_services",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "job_roles",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "job_roles",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "job_roles",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "job_roles",
+      "field": "job_role_name",
+      "type": "string",
+      "meta": {
+        "collection": "job_roles",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "job_role_name",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "job_role_name",
+        "table": "job_roles",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "payrolls",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "month",
+      "type": "integer",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "month",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "month",
+        "table": "payrolls",
+        "data_type": "int",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "year",
+      "type": "integer",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "year",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "year",
+        "table": "payrolls",
+        "data_type": "int",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "total_minutes",
+      "type": "integer",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "total_minutes",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "total_minutes",
+        "table": "payrolls",
+        "data_type": "int",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "hourly_rate",
+      "type": "decimal",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "hourly_rate",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 5,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "hourly_rate",
+        "table": "payrolls",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 5,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "total_amount",
+      "type": "decimal",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "total_amount",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "total_amount",
+        "table": "payrolls",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 5,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Draft",
+              "value": "Draft"
+            },
+            {
+              "text": "Paid",
+              "value": "Paid"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 7,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "status",
+        "table": "payrolls",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "employee_id",
+      "type": "integer",
+      "meta": {
+        "collection": "payrolls",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "employee_id",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "employee_id",
+        "table": "payrolls",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "projects",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Draft",
+              "value": "Draft"
+            },
+            {
+              "text": "In Progress",
+              "value": "In Progress"
+            },
+            {
+              "text": "Completed",
+              "value": "Completed"
+            },
+            {
+              "text": "Cancelled",
+              "value": "Cancelled"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "status",
+        "table": "projects",
+        "data_type": "varchar",
+        "default_value": "Draft",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "date_created",
+      "type": "timestamp",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_created",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": [
+          "date-created"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "date_created",
+        "table": "projects",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "date_updated",
+      "type": "timestamp",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_updated",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": [
+          "date-updated"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "date_updated",
+        "table": "projects",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "project_name",
+      "type": "string",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "project_name",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 5,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "project_name",
+        "table": "projects",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "description",
+      "type": "text",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "description",
+        "group": null,
+        "hidden": false,
+        "interface": "input-rich-text-md",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "description",
+        "table": "projects",
+        "data_type": "text",
+        "default_value": null,
+        "max_length": 65535,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "budget",
+      "type": "decimal",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "budget",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 8,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "budget",
+        "table": "projects",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 5,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "deadline",
+      "type": "date",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "deadline",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 9,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "deadline",
+        "table": "projects",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "start_date",
+      "type": "date",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "start_date",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 10,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "start_date",
+        "table": "projects",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "end_date",
+      "type": "date",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "end_date",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 11,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "end_date",
+        "table": "projects",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "priority",
+      "type": "string",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "priority",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Low",
+              "value": "Low"
+            },
+            {
+              "text": "Medium",
+              "value": "Medium"
+            },
+            {
+              "text": "High",
+              "value": "High"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 12,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "priority",
+        "table": "projects",
+        "data_type": "varchar",
+        "default_value": "Medium",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "customer_id",
+      "type": "integer",
+      "meta": {
+        "collection": "projects",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": null,
+        "field": "customer_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 13,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "customer_id",
+        "table": "projects",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "customers",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "projects_employees",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "projects_employees",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "services",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "services",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "services",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "services",
+      "field": "name",
+      "type": "string",
+      "meta": {
+        "collection": "services",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "name",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "name",
+        "table": "services",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "services",
+      "field": "price",
+      "type": "decimal",
+      "meta": {
+        "collection": "services",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "price",
+        "group": null,
+        "hidden": false,
+        "interface": "numeric",
+        "note": null,
+        "options": {
+          "iconLeft": "attach_money"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "price",
+        "table": "services",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 5,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "services",
+      "field": "discount_type",
+      "type": "string",
+      "meta": {
+        "collection": "services",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "discount_type",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "None",
+              "value": "None"
+            },
+            {
+              "text": "Fixed",
+              "value": "Fixed"
+            },
+            {
+              "text": "Percentage",
+              "value": "Percentage"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "discount_type",
+        "table": "services",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "services",
+      "field": "discount_value",
+      "type": "decimal",
+      "meta": {
+        "collection": "services",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "discount_value",
+        "group": null,
+        "hidden": false,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 5,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "discount_value",
+        "table": "services",
+        "data_type": "decimal",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 5,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "support_tickets",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Open",
+              "value": "Open"
+            },
+            {
+              "text": "In Progress",
+              "value": "In Progress"
+            },
+            {
+              "text": "Resolved",
+              "value": "Resolved"
+            },
+            {
+              "text": "Closed",
+              "value": "Closed"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "status",
+        "table": "support_tickets",
+        "data_type": "varchar",
+        "default_value": "Open",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "priority",
+      "type": "string",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "priority",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Low",
+              "value": "Low"
+            },
+            {
+              "text": "Medium",
+              "value": "Medium"
+            },
+            {
+              "text": "High",
+              "value": "High"
+            },
+            {
+              "text": "Urgent",
+              "value": "Urgent"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 3,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "priority",
+        "table": "support_tickets",
+        "data_type": "varchar",
+        "default_value": "Medium",
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "date_created",
+      "type": "timestamp",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_created",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": [
+          "date-created"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "date_created",
+        "table": "support_tickets",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "date_updated",
+      "type": "timestamp",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_updated",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 5,
+        "special": [
+          "date-updated"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "date_updated",
+        "table": "support_tickets",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "title",
+      "type": "string",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "title",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "title",
+        "table": "support_tickets",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "description",
+      "type": "text",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "description",
+        "group": null,
+        "hidden": false,
+        "interface": "input-rich-text-md",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 7,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "description",
+        "table": "support_tickets",
+        "data_type": "text",
+        "default_value": null,
+        "max_length": 65535,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "customer_id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": null,
+        "field": "customer_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 11,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "customer_id",
+        "table": "support_tickets",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "customers",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "project_id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": null,
+        "field": "project_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 12,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "project_id",
+        "table": "support_tickets",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "assigned_developer_id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": null,
+        "field": "assigned_developer_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 13,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "assigned_developer_id",
+        "table": "support_tickets",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "tasks",
+      "type": "alias",
+      "meta": {
+        "collection": "support_tickets",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "tasks",
+        "group": null,
+        "hidden": false,
+        "interface": "list-m2m",
+        "note": null,
+        "options": {
+          "template": "{{tasks_id.name}}"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 14,
+        "special": [
+          "m2m"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      }
+    },
+    {
+      "collection": "support_tickets_tasks",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets_tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "support_tickets_tasks",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "tasks",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "name",
+      "type": "string",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "name",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 2,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "name",
+        "table": "tasks",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "status",
+      "type": "string",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "status",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "To Do",
+              "value": "To Do"
+            },
+            {
+              "text": "In Progress",
+              "value": "In Progress"
+            },
+            {
+              "text": "Done",
+              "value": "Done"
+            },
+            {
+              "text": "Blocked",
+              "value": "Blocked"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "status",
+        "table": "tasks",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "priority",
+      "type": "string",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "priority",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown",
+        "note": null,
+        "options": {
+          "choices": [
+            {
+              "text": "Low",
+              "value": "Low"
+            },
+            {
+              "text": "Medium",
+              "value": "Medium"
+            },
+            {
+              "text": "High",
+              "value": "High"
+            },
+            {
+              "text": "Urgent",
+              "value": "Urgent"
+            }
+          ]
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 4,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "priority",
+        "table": "tasks",
+        "data_type": "varchar",
+        "default_value": null,
+        "max_length": 255,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "deadline",
+      "type": "date",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "deadline",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 5,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "deadline",
+        "table": "tasks",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "estimated_minutes",
+      "type": "integer",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "estimated_minutes",
+        "group": null,
+        "hidden": false,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "estimated_minutes",
+        "table": "tasks",
+        "data_type": "int",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "support_tickets",
+      "type": "alias",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "support_tickets",
+        "group": null,
+        "hidden": false,
+        "interface": "list-m2m",
+        "note": null,
+        "options": {
+          "template": "{{support_tickets_id.title}}"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 7,
+        "special": [
+          "m2m"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "project_id",
+      "type": "integer",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": {
+          "template": "{{project_name}}"
+        },
+        "field": "project_id",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "project_id",
+        "table": "tasks",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "employee_id",
+      "type": "integer",
+      "meta": {
+        "collection": "tasks",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "employee_id",
+        "group": null,
+        "hidden": false,
+        "interface": null,
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": null,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "employee_id",
+        "table": "tasks",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "id",
+      "type": "integer",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "id",
+        "group": null,
+        "hidden": true,
+        "interface": "numeric",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 1,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "id",
+        "table": "time_logs",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": true,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": true,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "date_created",
+      "type": "timestamp",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_created",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 2,
+        "special": [
+          "date-created"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "date_created",
+        "table": "time_logs",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "date_updated",
+      "type": "timestamp",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "date_updated",
+        "group": null,
+        "hidden": true,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": true,
+        "required": false,
+        "searchable": true,
+        "sort": 3,
+        "special": [
+          "date-updated"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "date_updated",
+        "table": "time_logs",
+        "data_type": "timestamp",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "minutes",
+      "type": "integer",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "minutes",
+        "group": null,
+        "hidden": false,
+        "interface": "input",
+        "note": "Time spent in minutes",
+        "options": null,
+        "readonly": false,
+        "required": true,
+        "searchable": true,
+        "sort": 6,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "minutes",
+        "table": "time_logs",
+        "data_type": "int",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": false,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "log_date",
+      "type": "date",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "log_date",
+        "group": null,
+        "hidden": false,
+        "interface": "datetime",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 7,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "log_date",
+        "table": "time_logs",
+        "data_type": "date",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "notes",
+      "type": "text",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "notes",
+        "group": null,
+        "hidden": false,
+        "interface": "input-multiline",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 8,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "name": "notes",
+        "table": "time_logs",
+        "data_type": "text",
+        "default_value": null,
+        "max_length": 65535,
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": false,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": null,
+        "foreign_key_column": null
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "project_id",
+      "type": "integer",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": null,
+        "field": "project_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 9,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "project_id",
+        "table": "time_logs",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "developer_id",
+      "type": "integer",
+      "meta": {
+        "collection": "time_logs",
+        "conditions": null,
+        "display": "related-values",
+        "display_options": null,
+        "field": "developer_id",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": null,
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 10,
+        "special": null,
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "half"
+      },
+      "schema": {
+        "name": "developer_id",
+        "table": "time_logs",
+        "data_type": "int unsigned",
+        "default_value": null,
+        "max_length": null,
+        "numeric_precision": 10,
+        "numeric_scale": 0,
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "is_generated": false,
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id"
+      }
+    },
+    {
+      "collection": "invoices_services",
+      "field": "invoices_id",
+      "type": "integer",
+      "meta": {
+        "collection": "invoices_services",
+        "field": "invoices_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "invoices_id",
+        "table": "invoices_services",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    },
+    {
+      "collection": "invoices_services",
+      "field": "services_id",
+      "type": "integer",
+      "meta": {
+        "collection": "invoices_services",
+        "field": "services_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "services_id",
+        "table": "invoices_services",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "field": "projects_id",
+      "type": "integer",
+      "meta": {
+        "collection": "projects_employees",
+        "field": "projects_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "projects_id",
+        "table": "projects_employees",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "field": "employees_id",
+      "type": "integer",
+      "meta": {
+        "collection": "projects_employees",
+        "field": "employees_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "employees_id",
+        "table": "projects_employees",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    },
+    {
+      "collection": "support_tickets_tasks",
+      "field": "support_tickets_id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets_tasks",
+        "field": "support_tickets_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "support_tickets_id",
+        "table": "support_tickets_tasks",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    },
+    {
+      "collection": "support_tickets_tasks",
+      "field": "tasks_id",
+      "type": "integer",
+      "meta": {
+        "collection": "support_tickets_tasks",
+        "field": "tasks_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "tasks_id",
+        "table": "support_tickets_tasks",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "task_id",
+      "type": "integer",
+      "meta": {
+        "collection": "time_logs",
+        "field": "task_id",
+        "hidden": true,
+        "interface": null,
+        "note": null,
+        "readonly": false,
+        "required": false,
+        "sort": 99,
+        "width": "full"
+      },
+      "schema": {
+        "name": "task_id",
+        "table": "time_logs",
+        "data_type": "INT",
+        "is_nullable": true,
+        "is_unique": false,
+        "is_indexed": true,
+        "is_primary_key": false,
+        "has_auto_increment": false
+      }
+    }
+  ],
+  "systemFields": [
+    {
+      "collection": "directus_access",
+      "field": "policy",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_access",
+      "field": "role",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_access",
+      "field": "user",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_activity",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_activity",
+      "field": "timestamp",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_collections",
+      "field": "group",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_comments",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_comments",
+      "field": "user_updated",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_dashboards",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_fields",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_files",
+      "field": "folder",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_files",
+      "field": "modified_by",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_files",
+      "field": "uploaded_by",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_flows",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_folders",
+      "field": "parent",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_notifications",
+      "field": "recipient",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_notifications",
+      "field": "sender",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_operations",
+      "field": "flow",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_operations",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_panels",
+      "field": "dashboard",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_panels",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_permissions",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_permissions",
+      "field": "policy",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_presets",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_presets",
+      "field": "role",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_presets",
+      "field": "user",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_relations",
+      "field": "many_collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_relations",
+      "field": "one_collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_revisions",
+      "field": "activity",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_revisions",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_revisions",
+      "field": "parent",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_revisions",
+      "field": "version",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_roles",
+      "field": "parent",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_sessions",
+      "field": "share",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_sessions",
+      "field": "user",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "field": "project_logo",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "field": "public_background",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "field": "public_favicon",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "field": "public_foreground",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "field": "public_registration_role",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_settings",
+      "field": "storage_default_folder",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_shares",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_shares",
+      "field": "role",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_shares",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_users",
+      "field": "role",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_versions",
+      "field": "collection",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_versions",
+      "field": "user_created",
+      "schema": {
+        "is_indexed": true
+      }
+    },
+    {
+      "collection": "directus_versions",
+      "field": "user_updated",
+      "schema": {
+        "is_indexed": true
+      }
+    }
+  ],
+  "relations": [
+    {
+      "collection": "employees",
+      "field": "job_role",
+      "related_collection": "job_roles",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "employees",
+        "many_field": "job_role",
+        "one_allowed_collections": null,
+        "one_collection": "job_roles",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "employees",
+        "column": "job_role",
+        "foreign_key_table": "job_roles",
+        "foreign_key_column": "id",
+        "constraint_name": "employees_job_role_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "SET NULL"
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "customer_id",
+      "related_collection": "customers",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "invoices",
+        "many_field": "customer_id",
+        "one_allowed_collections": null,
+        "one_collection": "customers",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "invoices",
+        "column": "customer_id",
+        "foreign_key_table": "customers",
+        "foreign_key_column": "id",
+        "constraint_name": "invoices_customer_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "SET NULL"
+      }
+    },
+    {
+      "collection": "invoices",
+      "field": "project_id",
+      "related_collection": "projects",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "invoices",
+        "many_field": "project_id",
+        "one_allowed_collections": null,
+        "one_collection": "projects",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "invoices",
+        "column": "project_id",
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id",
+        "constraint_name": "invoices_project_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "SET NULL"
+      }
+    },
+    {
+      "collection": "invoices_services",
+      "field": "invoices_id",
+      "related_collection": "invoices",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "invoices_services",
+        "many_field": "invoices_id",
+        "one_allowed_collections": null,
+        "one_collection": "invoices",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": "services",
+        "sort_field": null
+      },
+      "schema": {
+        "table": "invoices_services",
+        "column": "invoices_id",
+        "foreign_key_table": "invoices",
+        "foreign_key_column": "id",
+        "constraint_name": "invoices_services_invoices_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "CASCADE"
+      }
+    },
+    {
+      "collection": "invoices_services",
+      "field": "services_id",
+      "related_collection": "services",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "invoices_services",
+        "many_field": "services_id",
+        "one_allowed_collections": null,
+        "one_collection": "services",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "invoices_services",
+        "column": "services_id",
+        "foreign_key_table": "services",
+        "foreign_key_column": "id",
+        "constraint_name": "invoices_services_services_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "CASCADE"
+      }
+    },
+    {
+      "collection": "payrolls",
+      "field": "employee_id",
+      "related_collection": "employees",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "payrolls",
+        "many_field": "employee_id",
+        "one_allowed_collections": null,
+        "one_collection": "employees",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "payrolls",
+        "column": "employee_id",
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id",
+        "constraint_name": "payrolls_employee_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "projects",
+      "field": "customer_id",
+      "related_collection": "customers",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "projects",
+        "many_field": "customer_id",
+        "one_allowed_collections": null,
+        "one_collection": "customers",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "projects",
+        "column": "customer_id",
+        "foreign_key_table": "customers",
+        "foreign_key_column": "id",
+        "constraint_name": "projects_customer_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "field": "projects_id",
+      "related_collection": "projects",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "projects_employees",
+        "many_field": "projects_id",
+        "one_allowed_collections": null,
+        "one_collection": "projects",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "projects_employees",
+        "column": "projects_id",
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id",
+        "constraint_name": "projects_employees_projects_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "projects_employees",
+      "field": "employees_id",
+      "related_collection": "employees",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "projects_employees",
+        "many_field": "employees_id",
+        "one_allowed_collections": null,
+        "one_collection": "employees",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "projects_employees",
+        "column": "employees_id",
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id",
+        "constraint_name": "projects_employees_employees_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "customer_id",
+      "related_collection": "customers",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "support_tickets",
+        "many_field": "customer_id",
+        "one_allowed_collections": null,
+        "one_collection": "customers",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "support_tickets",
+        "column": "customer_id",
+        "foreign_key_table": "customers",
+        "foreign_key_column": "id",
+        "constraint_name": "support_tickets_customer_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "project_id",
+      "related_collection": "projects",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "support_tickets",
+        "many_field": "project_id",
+        "one_allowed_collections": null,
+        "one_collection": "projects",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": "support_tickets",
+        "sort_field": null
+      },
+      "schema": {
+        "table": "support_tickets",
+        "column": "project_id",
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id",
+        "constraint_name": "support_tickets_project_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "support_tickets",
+      "field": "assigned_developer_id",
+      "related_collection": "employees",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "support_tickets",
+        "many_field": "assigned_developer_id",
+        "one_allowed_collections": null,
+        "one_collection": "employees",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "support_tickets",
+        "column": "assigned_developer_id",
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id",
+        "constraint_name": "support_tickets_assigned_developer_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "support_tickets_tasks",
+      "field": "support_tickets_id",
+      "related_collection": "support_tickets",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "support_tickets_tasks",
+        "many_field": "support_tickets_id",
+        "one_allowed_collections": null,
+        "one_collection": "support_tickets",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": "tasks",
+        "sort_field": null
+      },
+      "schema": {
+        "table": "support_tickets_tasks",
+        "column": "support_tickets_id",
+        "foreign_key_table": "support_tickets",
+        "foreign_key_column": "id",
+        "constraint_name": "support_tickets_tasks_support_tickets_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "CASCADE"
+      }
+    },
+    {
+      "collection": "support_tickets_tasks",
+      "field": "tasks_id",
+      "related_collection": "tasks",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "support_tickets_tasks",
+        "many_field": "tasks_id",
+        "one_allowed_collections": null,
+        "one_collection": "tasks",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": "support_tickets",
+        "sort_field": null
+      },
+      "schema": {
+        "table": "support_tickets_tasks",
+        "column": "tasks_id",
+        "foreign_key_table": "tasks",
+        "foreign_key_column": "id",
+        "constraint_name": "support_tickets_tasks_tasks_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "CASCADE"
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "project_id",
+      "related_collection": "projects",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "tasks",
+        "many_field": "project_id",
+        "one_allowed_collections": null,
+        "one_collection": "projects",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "tasks",
+        "column": "project_id",
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id",
+        "constraint_name": "tasks_project_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "tasks",
+      "field": "employee_id",
+      "related_collection": "employees",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "tasks",
+        "many_field": "employee_id",
+        "one_allowed_collections": null,
+        "one_collection": "employees",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "tasks",
+        "column": "employee_id",
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id",
+        "constraint_name": "tasks_employee_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "project_id",
+      "related_collection": "projects",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "time_logs",
+        "many_field": "project_id",
+        "one_allowed_collections": null,
+        "one_collection": "projects",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": "time_logs",
+        "sort_field": null
+      },
+      "schema": {
+        "table": "time_logs",
+        "column": "project_id",
+        "foreign_key_table": "projects",
+        "foreign_key_column": "id",
+        "constraint_name": "time_logs_project_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "task_id",
+      "related_collection": "tasks",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "time_logs",
+        "many_field": "task_id",
+        "one_allowed_collections": null,
+        "one_collection": "tasks",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "schema": {
+        "table": "time_logs",
+        "column": "task_id",
+        "foreign_key_table": "tasks",
+        "foreign_key_column": "id",
+        "constraint_name": "time_logs_task_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    },
+    {
+      "collection": "time_logs",
+      "field": "developer_id",
+      "related_collection": "employees",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "time_logs",
+        "many_field": "developer_id",
+        "one_allowed_collections": null,
+        "one_collection": "employees",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": "time_logs",
+        "sort_field": null
+      },
+      "schema": {
+        "table": "time_logs",
+        "column": "developer_id",
+        "foreign_key_table": "employees",
+        "foreign_key_column": "id",
+        "constraint_name": "time_logs_developer_id_foreign",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    }
+  ]
+}
